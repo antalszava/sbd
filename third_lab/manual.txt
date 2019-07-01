@@ -1,0 +1,6 @@
+Zookeeper server:
+E:\kafka_2.11-2.0.0\bin\windows\zookeeper-server-start.bat $env:KAFKA_HOME\config\zookeeper.properties
+Kafka server:
+E:\kafka_2.11-2.0.0\bin\windows\kafka-server-start.bat $env:KAFKA_HOME\config\server.properties
+Consumer for testing:
+E:\kafka_2.11-2.0.0\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic gdelt --property print.key=true --property key.separator=-
